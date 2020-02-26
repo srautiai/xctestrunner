@@ -486,11 +486,11 @@ class XctestRunFactory(object):
 
     self._xctestrun_dict = {
         'IsUITestBundle': True,
-        'SystemAttachmentLifetime': 'keepNever',
+        'SystemAttachmentLifetime': 'keepAlways',
         'TestBundlePath': self._test_bundle_dir,
         'TestHostPath': uitest_runner_app,
         'UITargetAppPath': self._app_under_test_dir,
-        'UserAttachmentLifetime': 'keepNever',
+        'UserAttachmentLifetime': 'keepAlways',
         'TestingEnvironmentVariables': test_envs,
         'DependentProductPaths': [
             self._app_under_test_dir,
